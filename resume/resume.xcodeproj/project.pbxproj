@@ -21,6 +21,7 @@
 		31BAD6EA176B9BA300DFAAF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31BAD6CC176B9BA300DFAAF8 /* UIKit.framework */; };
 		31BAD6F2176B9BA300DFAAF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31BAD6F0176B9BA300DFAAF8 /* InfoPlist.strings */; };
 		31BAD6F4176B9BA300DFAAF8 /* resumeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BAD6F3176B9BA300DFAAF8 /* resumeTests.m */; };
+		31F19983176BAD9E003BBAC0 /* PersonInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F19982176BAD9E003BBAC0 /* PersonInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		31BAD6EF176B9BA300DFAAF8 /* resumeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "resumeTests-Info.plist"; sourceTree = "<group>"; };
 		31BAD6F1176B9BA300DFAAF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		31BAD6F3176B9BA300DFAAF8 /* resumeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = resumeTests.m; sourceTree = "<group>"; };
+		31F19981176BAD9E003BBAC0 /* PersonInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonInfo.h; sourceTree = "<group>"; };
+		31F19982176BAD9E003BBAC0 /* PersonInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				31BAD6DE176B9BA300DFAAF8 /* ViewController.m */,
 				31BAD6E0176B9BA300DFAAF8 /* Images.xcassets */,
 				31BAD6CF176B9BA300DFAAF8 /* Supporting Files */,
+				31F19981176BAD9E003BBAC0 /* PersonInfo.h */,
+				31F19982176BAD9E003BBAC0 /* PersonInfo.m */,
 			);
 			path = resume;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 			files = (
 				31BAD6DF176B9BA300DFAAF8 /* ViewController.m in Sources */,
 				31BAD6D9176B9BA300DFAAF8 /* AppDelegate.m in Sources */,
+				31F19983176BAD9E003BBAC0 /* PersonInfo.m in Sources */,
 				31BAD6D5176B9BA300DFAAF8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +460,7 @@
 				31BAD6F9176B9BA300DFAAF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		31BAD6FA176B9BA300DFAAF8 /* Build configuration list for PBXNativeTarget "resumeTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +469,7 @@
 				31BAD6FC176B9BA300DFAAF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PersonInfo.h"
 
 @interface ViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UITextField *firstNameTextField;
+@property (strong, nonatomic) IBOutlet UITextField *lastNameTextField;
+@property (strong, nonatomic) IBOutlet UITextField *addressTextField;
+@property (strong, nonatomic) IBOutlet UITextField *address1TextField;
+@property (strong, nonatomic) IBOutlet UITextField *cityTextField;
+@property (strong, nonatomic) IBOutlet UITextField *stateTextField;
+@property (strong, nonatomic) IBOutlet UITextField *zipTextField;
+@property (strong, nonatomic) IBOutlet UITextField *countryTextField;
+
+- (IBAction)startInfoButton:(id)sender;
 
 @end

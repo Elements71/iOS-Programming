@@ -13,6 +13,8 @@
 @end
 
 @implementation ViewController
+@synthesize firstNameTextField,lastNameTextField,addressTextField,address1TextField,cityTextField,stateTextField,zipTextField,countryTextField;
+
 
 - (void)viewDidLoad
 {
@@ -26,4 +28,6 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)startInfoButton:(id)sender {
+}
 @end
