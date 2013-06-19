@@ -9,6 +9,6 @@
 #import "PersonInfo.h"
 
 @implementation PersonInfo
-@synthesize  firstName, lastName, address, address1, city, state, zip, country;
+@synthesize  firstName, lastName, address, address1, city, state, zip, country,fullPersonImageName;
 
 @end

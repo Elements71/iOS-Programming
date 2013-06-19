@@ -13,13 +13,26 @@
 @end
 
 @implementation ViewController
-@synthesize firstNameTextField,lastNameTextField,addressTextField,address1TextField,cityTextField,stateTextField,zipTextField,countryTextField;
+@synthesize firstNameTextField,lastNameTextField,addressTextField,address1TextField,cityTextField,stateTextField,zipTextField,countryTextField, personDetails;
+@synthesize personInfo;
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    personInfo= [[PersonInfo alloc]init];
+    firstNameTextField.delegate = self;
+    lastNameTextField.delegate = self;
+    addressTextField.delegate=self;
+    address1TextField.delegate=self;
+    cityTextField.delegate=self;
+    stateTextField.delegate=self;
+    zipTextField.delegate=self;
+    countryTextField.delegate=self;
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -29,5 +42,31 @@
 }
 
 - (IBAction)startInfoButton:(id)sender {
+    personInfo.firstName=firstNameTextField.text;
+    personInfo.lastName=lastNameTextField.text;
+
+    personInfo.lastName=lastNameTextField.text;
+    personInfo.address=addressTextField.text;
+    personInfo.address1=address1TextField.text;
+    personInfo.city = cityTextField.text;
+    personInfo.state= stateTextField.text;
+    personInfo.zip = [zipTextField.text intValue];
+    personInfo.country = countryTextField.text;
+    
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField*)textField;
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showResume"]) {
+       ResumeViewController *resumeViewController= [segue destinationViewController];
+        resumeViewController.currentPersonInfo =personInfo;
+        
+    }
 }
 @end

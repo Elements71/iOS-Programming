@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31B4492F176F6A1D00AD537C /* ResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B4492E176F6A1D00AD537C /* ResumeViewController.m */; };
 		31BAD6C9176B9BA300DFAAF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31BAD6C8176B9BA300DFAAF8 /* Foundation.framework */; };
 		31BAD6CB176B9BA300DFAAF8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31BAD6CA176B9BA300DFAAF8 /* CoreGraphics.framework */; };
 		31BAD6CD176B9BA300DFAAF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31BAD6CC176B9BA300DFAAF8 /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31B4492D176F6A1D00AD537C /* ResumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResumeViewController.h; sourceTree = "<group>"; };
+		31B4492E176F6A1D00AD537C /* ResumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumeViewController.m; sourceTree = "<group>"; };
 		31BAD6C5176B9BA300DFAAF8 /* resume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = resume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31BAD6C8176B9BA300DFAAF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		31BAD6CA176B9BA300DFAAF8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -115,11 +118,13 @@
 		31BAD6CE176B9BA300DFAAF8 /* resume */ = {
 			isa = PBXGroup;
 			children = (
-				31BAD6D7176B9BA300DFAAF8 /* AppDelegate.h */,
 				31BAD6D8176B9BA300DFAAF8 /* AppDelegate.m */,
+				31BAD6D7176B9BA300DFAAF8 /* AppDelegate.h */,
 				31BAD6DA176B9BA300DFAAF8 /* Main.storyboard */,
 				31BAD6DD176B9BA300DFAAF8 /* ViewController.h */,
 				31BAD6DE176B9BA300DFAAF8 /* ViewController.m */,
+				31B4492D176F6A1D00AD537C /* ResumeViewController.h */,
+				31B4492E176F6A1D00AD537C /* ResumeViewController.m */,
 				31BAD6E0176B9BA300DFAAF8 /* Images.xcassets */,
 				31BAD6CF176B9BA300DFAAF8 /* Supporting Files */,
 				31F19981176BAD9E003BBAC0 /* PersonInfo.h */,
@@ -257,6 +262,7 @@
 				31BAD6DF176B9BA300DFAAF8 /* ViewController.m in Sources */,
 				31BAD6D9176B9BA300DFAAF8 /* AppDelegate.m in Sources */,
 				31F19983176BAD9E003BBAC0 /* PersonInfo.m in Sources */,
+				31B4492F176F6A1D00AD537C /* ResumeViewController.m in Sources */,
 				31BAD6D5176B9BA300DFAAF8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

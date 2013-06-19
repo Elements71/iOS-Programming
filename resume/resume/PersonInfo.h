@@ -15,7 +15,8 @@
 @property (nonatomic, strong) NSString *address1;
 @property (nonatomic, strong) NSString *city;
 @property (nonatomic, strong) NSString *state;
-@property (nonatomic) int *zip;
+@property (nonatomic) int zip;
 @property (nonatomic, strong) NSString *country;
+@property (nonatomic, strong) NSString *fullPersonImageName;
 
 @end

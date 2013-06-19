@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "PersonInfo.h"
+#import "ResumeViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITextFieldDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *firstNameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *lastNameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *addressTextField;
@@ -18,6 +19,10 @@
 @property (strong, nonatomic) IBOutlet UITextField *stateTextField;
 @property (strong, nonatomic) IBOutlet UITextField *zipTextField;
 @property (strong, nonatomic) IBOutlet UITextField *countryTextField;
+
+@property (strong,nonatomic) PersonInfo *personInfo;
+@property (strong, nonatomic) NSMutableArray *personDetails;
+@property (strong,nonatomic) ResumeViewController *resumeViewController;
 
 - (IBAction)startInfoButton:(id)sender;
 
